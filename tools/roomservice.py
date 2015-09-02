@@ -46,8 +46,8 @@ default_manifest = ".repo/manifest.xml"
 custom_local_manifest = ".repo/local_manifests/razor_manifest.xml"
 custom_default_revision = "lp5.1"
 custom_dependencies = "razor.dependencies"
-org_manifest = "RAZOR-DEVS"  # leave empty if org is provided in manifest
-org_display = "RAZOR-DEVS"  # needed for displaying
+org_manifest = "TEAM-RAZOR-DEVICES"  # leave empty if org is provided in manifest
+org_display = "TEAM-RAZOR-DEVICES"  # needed for displaying
 
 github_auth = None
 
