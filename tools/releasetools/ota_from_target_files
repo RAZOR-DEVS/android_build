@@ -593,6 +593,16 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
 
   system_progress = 0.75
 
+script.Print("  ___________________________________  ")
+script.Print(" |  _  \ |  _  ||____  /|  _  ||  _  \ ")
+script.Print(" | |_| | | /_\ |    / / | | | || |_| | ")
+script.Print(" |  _/ / |  _  |   / /  | | | ||  _/ / ")
+script.Print(" | |\ \  | / \ |  / /   | | | || |\ \  ")
+script.Print(" | | \ \ | | | | / /___ | |_| || | \ \ ")
+script.Print(" |_|  \_\|_| |_|/______||_____||_|  \_\")
+
+script.Print("Welcome to Razor World!")
+
   if OPTIONS.wipe_user_data:
     system_progress -= 0.1
   if HasVendorPartition(input_zip):
