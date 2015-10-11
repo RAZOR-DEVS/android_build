@@ -1741,14 +1741,19 @@ endif
 bacon: otapackage
 	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(RAZOR_TARGET_PACKAGE)
 	$(hide) $(MD5SUM) $(RAZOR_TARGET_PACKAGE) > $(RAZOR_TARGET_PACKAGE).md5sum
-	@echo -e ${CL_CYN}""${CL_RST}
-	@echo -e ${CL_CYN}"        ___________                             __________                                "${CL_RST}
-	@echo -e ${CL_CYN}"        \__    ___/___ _____    _____           \______   \_____  ___________________     "${CL_RST}
-	@echo -e ${CL_CYN}"          |    |_/ __ \\__  \  /     \   ______  |       _/\__  \ \___   /  _ \_  __ \    "${CL_RST}
-	@echo -e ${CL_CYN}"          |    |\  ___/ / __ \|  Y Y  \ /_____/  |    |   \ / __ \_/    (  <_> )  | \/    "${CL_RST}
-	@echo -e ${CL_CYN}"          |____| \___  >____  /__|_|  /          |____|_  /(____  /_____ \____/|__|       "${CL_RST}
-	@echo -e ${CL_CYN}"                     \/     \/      \/                  \/      \/      \/                "${CL_RST}
-	@echo -e ${CL_CYN}""${CL_RST}
+	@echo -e ${CL_RST}""${CL_RST}
+	@echo -e ${CL_GRN}" ▄▄▄█████▓▓█████ ▄▄▄       ███▄ ▄███▓ ██▀███   ▄▄▄      ▒███████▒ ▒█████   ██▀███   "${CL_GRN}
+	@echo -e ${CL_GRN}"▓  ██▒ ▓▒▓█   ▀▒████▄    ▓██▒▀█▀ ██▒▓██ ▒ ██▒▒████▄    ▒ ▒ ▒ ▄▀░▒██▒  ██▒▓██ ▒ ██▒  "${CL_GRN}
+	@echo -e ${CL_GRN}"▒ ▓██░ ▒░▒███  ▒██  ▀█▄  ▓██    ▓██░▓██ ░▄█ ▒▒██  ▀█▄  ░ ▒ ▄▀▒░ ▒██░  ██▒▓██ ░▄█ ▒  "${CL_GRN}
+	@echo -e ${CL_GRN}"░ ▓██▓ ░ ▒▓█  ▄░██▄▄▄▄██ ▒██    ▒██ ▒██▀▀█▄  ░██▄▄▄▄██   ▄▀▒   ░▒██   ██░▒██▀▀█▄    "${CL_GRN}
+	@echo -e ${CL_GRN}"  ▒██▒ ░ ░▒████▒▓█   ▓██▒▒██▒   ░██▒░██▓ ▒██▒ ▓█   ▓██▒▒███████▒░ ████▓▒░░██▓ ▒██▒  "${CL_GRN}
+	@echo -e ${CL_GRN}"  ▒ ░░   ░░ ▒░ ░▒▒   ▓▒█░░ ▒░   ░  ░░ ▒▓ ░▒▓░ ▒▒   ▓▒█░░▒▒ ▓░▒░▒░ ▒░▒░▒░ ░ ▒▓ ░▒▓░  "${CL_GRN}
+	@echo -e ${CL_GRN}"    ░     ░ ░  ░ ▒   ▒▒ ░░  ░      ░  ░▒ ░ ▒░  ▒   ▒▒ ░░░▒ ▒ ░ ▒  ░ ▒ ▒░   ░▒ ░ ▒░  "${CL_GRN}
+	@echo -e ${CL_GRN}"  ░         ░    ░   ▒   ░      ░     ░░   ░   ░   ▒   ░ ░ ░ ░ ░░ ░ ░ ▒    ░░   ░   "${CL_GRN}
+	@echo -e ${CL_GRN}"            ░  ░     ░  ░       ░      ░           ░  ░  ░ ░        ░ ░     ░       "${CL_GRN}
+	@echo -e ${CL_GRN}"                                                       ░                            "${CL_GRN}
+	@echo -e ${CL_RST}""${CL_RST}
+	@echo -e ${CL_CYN}"                    Build completed!! Flash that ROM and ENJOY!!                    "${CL_RST}
 	@echo -e ${CL_CYN}"Package Complete: $(RAZOR_TARGET_PACKAGE)"${CL_RST}
 
 bootzip: bootimage
