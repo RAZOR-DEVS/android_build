@@ -1754,6 +1754,8 @@ bacon: otapackage
 	@echo -e ${CL_GRN}"                                                       ░                            "${CL_GRN}
 	@echo -e ${CL_RST}""${CL_RST}
 	@echo -e ${CL_CYN}"                    Build completed!! Flash that ROM and ENJOY!!                    "${CL_RST}
+	@echo -e ${CL_RST}""${CL_RST}
+	@echo -e ${CL_RST}""${CL_RST}
 	@echo -e ${CL_CYN}"Package Complete: $(RAZOR_TARGET_PACKAGE)"${CL_RST}
 
 bootzip: bootimage
